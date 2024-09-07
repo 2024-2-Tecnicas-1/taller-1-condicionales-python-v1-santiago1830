@@ -1,6 +1,13 @@
 def evaluar(caracter):
-    # TODO: Coloca aquí el código del ejercicio 4: Letra o número
-    return "";
+    
+    if '0' <= caracter <= '9':
+        return f"El carácter '{caracter}' es un número."
+    
+    elif ('a' <= caracter <= 'z') or ('A' <= caracter <= 'Z'):
+        return f"El carácter '{caracter}' es una letra."
+   
+    else:
+        return f"El carácter '{caracter}' no es ni una letra ni un número."
 
 if __name__ == '__main__':
     print("Caracter:", end='')

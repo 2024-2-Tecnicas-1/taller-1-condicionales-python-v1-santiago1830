@@ -1,6 +1,19 @@
+import unittest
+
 def evaluar(anno):
-    # TODO: Coloca aquí el código del ejercicio 2: Años bisiestos
-    return "";
+   
+    if anno % 4 == 0:
+        
+        if anno % 100 == 0:
+            if anno % 400 == 0:
+                return "Año bisiesto"
+            else:
+                return "No es un año bisiesto"
+        else:
+            return "Año bisiesto"
+    else:
+        return "No es un año bisiesto"
+
 
 if __name__ == '__main__':
     print("Año:", end="")
@@ -8,3 +21,6 @@ if __name__ == '__main__':
 
     respuesta = evaluar(anno)
     print(respuesta)
+
+
+
